@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #FFFAF3;
+  font-family: 'Mukta', sans-serif;
+
+}
+
+#titleDiv {
+  flex: 1;
+}
+
+#titleDiv>h1 {
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  color: #495F7F;
+}
+
+.wrapper {
+  flex: 7;
+  display: flex;
+}
+
+#leftField {
+  flex: 1;
+  border: 2px solid #91BEFE;
+  margin: 1rem 0.5rem 1rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: #F1F7FF;
+  flex-direction: column;
+}
+
+#leftFieldHeading>h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0.2rem 0;
+}
+
+#leftFieldDropZone {
+  flex: 7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#rightField {
+  flex: 1;
+  border: 2px solid #91BEFE;
+  border-radius: 0.5rem;
+  margin: 1rem 1rem 1rem 0.5rem;
+  display: flex;
+  background-color: #F1F7FF;
+  flex-direction: column;
+}
+
+#rightFieldHeading>h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0.2rem 0;
+}
+
+#rightFieldDropZone {
+  flex: 7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#bottomField {
+  flex: 1.5;
+  display: inline-grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow-x: hidden;
+}
+
+#bottomField>h3 {
+  margin: 0;
+}
+
+.word {
+  margin: 0.25rem 0.5rem;
+  border: 2px solid #91BEFE;
+  border-radius: 0.5rem;
+  background-color: #E4EFFF;
+  align-self: center;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: grab;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="titleDiv">
+      <h1>Ziehe die Maßnahmen in das passende Feld</h1>
+    </div>
+
+    <div class="wrapper">
+      <div id="leftField">
+        <div id="leftFieldHeading">
+          <h3>Strafgesetzbuch (StGB)</h3>
+        </div>
+        <div id="leftFieldDropZone" ondragover='onDragOver(event);' ondrop='onDrop(event, this);'></div>
+      </div>
+
+      <div id="rightField">
+        <div id="rightFieldHeading">
+          <h3>Jugendgerichtsgesetz (JGG)</h3>
+        </div>
+        <div id="rightFieldDropZone" ondragover='onDragOver(event);' ondrop='onDrop(event, this);'></div>
+      </div>
+    </div>
+
+    <div id="bottomField" ondragover='onDragOver(event);' ondrop='onDrop(event);'>
+        <div class="word" draggable="true"  ondragstart='onDragStart(event);' id='word1'>Geldstrafe</div>
+        <div class="word" draggable="true"  ondragstart='onDragStart(event);' id='word2'>Freiheitsstrafe</div>
+        <div class="word" draggable="true"  ondragstart='onDragStart(event);' id='word3'>Jugendstrafe</div>
+        <div class="word" draggable="true"  ondragstart='onDragStart(event);' id='word4'>Freizeitarrest</div>
+        <div class="word" draggable="true"  ondragstart='onDragStart(event);' id='word5'>Auflagen</div>
+        <div class="word" draggable="true"  ondragstart='onDragStart(event);' id='word6'>Weisungen</div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="main.js"></script>

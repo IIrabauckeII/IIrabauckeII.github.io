@@ -1,0 +1,58 @@
+body {
+  background-image: url(./background_darker2.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+#title {
+  margin-right: 5rem;
+}
+
+#topBlock {
+  height: 40vh;
+}
+
+#keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  flex-wrap: wrap;
+}
+
+.key {
+  border: 1.2px solid rgb(252,166,34);
+  border-radius: 10%;
+  padding: 1rem;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  margin: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.07s;
+}
+
+.key:hover {
+  transform: scale(1.15);
+  background-color: rgba(252,166,34,0.4);
+  border-color: black;
+  cursor: pointer;
+}
+
+.keyDown {
+  transform: scale(1.15);
+  background-color: rgba(252,166,34,0.4);
+  border-color: black;
+}

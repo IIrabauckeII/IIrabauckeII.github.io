@@ -62,7 +62,7 @@ const rowNrInput = () => {
     removeElementsByClass('subDiv');
     createDivs(rowNr);
   } else {
-    alert("Please enter an integer above zero.")
+    alert("Please enter an integer number between zero and 128")
   }
 }
 
